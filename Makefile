@@ -1,5 +1,5 @@
 # FILTER get name from package.json
-PACKAGE_NAME = $(shell jq -r '.name' package.json)
+PACKAGE_NAME = $(shell jq -r '.name' apps/web-lorenzo/package.json)
 
 all: codegen start
 
@@ -10,6 +10,7 @@ start:
 
 codegen:
 	@echo "Generating code for $(PACKAGE_NAME)..."
+	@yarn install
 	@cd apps/$(PACKAGE_NAME) && yarn graphql:codegen
 
 .PHONY: start codegen

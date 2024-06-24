@@ -1,6 +1,6 @@
 {
-  "name": "web-lorenzo",
-  "version": "1.0.0",
+  "name": "big-dipper-2.0-cosmos",
+  "version": "2.2.0",
   "license": "Apache-2.0",
   "private": true,
   "workspaces": [

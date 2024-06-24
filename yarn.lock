@@ -6220,6 +6220,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"big-dipper-2.0-cosmos@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "big-dipper-2.0-cosmos@workspace:."
+  dependencies:
+    "@changesets/changelog-github": "npm:^0.4.8"
+    "@changesets/cli": "npm:^2.26.1"
+    "@next/eslint-plugin-next": "npm:^13.4.1"
+    "@playwright/test": "npm:^1.33.0"
+    "@types/eslint": "npm:^8.37.0"
+    "@typescript-eslint/eslint-plugin": "npm:^5.59.2"
+    "@typescript-eslint/parser": "npm:^5.59.2"
+    dotenv-cli: "npm:^7.2.1"
+    eslint: "npm:^8.40.0"
+    eslint-config-airbnb: "npm:^19.0.4"
+    eslint-config-next: "npm:^13.4.1"
+    eslint-config-prettier: "npm:^8.8.0"
+    eslint-config-turbo: "npm:^1.9.3"
+    eslint-import-resolver-typescript: "npm:^3.5.5"
+    eslint-plugin-import: "npm:^2.27.5"
+    eslint-plugin-jsx-a11y: "npm:^6.7.1"
+    eslint-plugin-react: "npm:^7.32.2"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-turbo: "npm:^1.9.3"
+    husky: "npm:^8.0.3"
+    lint-staged: "npm:^13.2.2"
+    next: "npm:^13.4.1"
+    prettier: "npm:2.8.8"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    turbo: "npm:^1.9.3"
+    typescript: "npm:^5.0.4"
+  languageName: unknown
+  linkType: soft
+
 "big.js@npm:^6.2.1":
   version: 6.2.1
   resolution: "big.js@npm:6.2.1"
@@ -15433,57 +15467,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-lorenzo@workspace:.":
+"web-lorenzo@workspace:apps/web-lorenzo":
   version: 0.0.0-use.local
-  resolution: "web-lorenzo@workspace:."
-  dependencies:
-    "@changesets/changelog-github": "npm:^0.4.8"
-    "@changesets/cli": "npm:^2.26.1"
-    "@next/eslint-plugin-next": "npm:^13.4.1"
-    "@playwright/test": "npm:^1.33.0"
-    "@types/eslint": "npm:^8.37.0"
-    "@typescript-eslint/eslint-plugin": "npm:^5.59.2"
-    "@typescript-eslint/parser": "npm:^5.59.2"
-    dotenv-cli: "npm:^7.2.1"
-    eslint: "npm:^8.40.0"
-    eslint-config-airbnb: "npm:^19.0.4"
-    eslint-config-next: "npm:^13.4.1"
-    eslint-config-prettier: "npm:^8.8.0"
-    eslint-config-turbo: "npm:^1.9.3"
-    eslint-import-resolver-typescript: "npm:^3.5.5"
-    eslint-plugin-import: "npm:^2.27.5"
-    eslint-plugin-jsx-a11y: "npm:^6.7.1"
-    eslint-plugin-react: "npm:^7.32.2"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-turbo: "npm:^1.9.3"
-    husky: "npm:^8.0.3"
-    lint-staged: "npm:^13.2.2"
-    next: "npm:^13.4.1"
-    prettier: "npm:2.8.8"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    turbo: "npm:^1.9.3"
-    typescript: "npm:^5.0.4"
-  languageName: unknown
-  linkType: soft
-
-"web-streams-polyfill@npm:4.0.0-beta.3":
-  version: 4.0.0-beta.3
-  resolution: "web-streams-polyfill@npm:4.0.0-beta.3"
-  checksum: 10/dcdef67de57d83008f9dc330662b65ba4497315555dd0e4e7bcacb132ffdf8a830eaab8f74ad40a4a44f542461f51223f406e2a446ece1cc29927859b1405853
-  languageName: node
-  linkType: hard
-
-"web-streams-polyfill@npm:^3.2.0, web-streams-polyfill@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "web-streams-polyfill@npm:3.2.1"
-  checksum: 10/08fcf97b7883c1511dd3da794f50e9bde75a660884783baaddb2163643c21a94086f394dc4bd20dff0f55c98d98d60c4bea05a5809ef5005bdf835b63ada8900
-  languageName: node
-  linkType: hard
-
-"web@workspace:apps/web-lorenzo":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:apps/web-lorenzo"
+  resolution: "web-lorenzo@workspace:apps/web-lorenzo"
   dependencies:
     "@apollo/client": "npm:^3.7.14"
     "@cosmjs/encoding": "npm:^0.30.1"
@@ -15605,6 +15591,20 @@ __metadata:
     zod: "npm:^3.21.4"
   languageName: unknown
   linkType: soft
+
+"web-streams-polyfill@npm:4.0.0-beta.3":
+  version: 4.0.0-beta.3
+  resolution: "web-streams-polyfill@npm:4.0.0-beta.3"
+  checksum: 10/dcdef67de57d83008f9dc330662b65ba4497315555dd0e4e7bcacb132ffdf8a830eaab8f74ad40a4a44f542461f51223f406e2a446ece1cc29927859b1405853
+  languageName: node
+  linkType: hard
+
+"web-streams-polyfill@npm:^3.2.0, web-streams-polyfill@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "web-streams-polyfill@npm:3.2.1"
+  checksum: 10/08fcf97b7883c1511dd3da794f50e9bde75a660884783baaddb2163643c21a94086f394dc4bd20dff0f55c98d98d60c4bea05a5809ef5005bdf835b63ada8900
+  languageName: node
+  linkType: hard
 
 "webcrypto-core@npm:^1.7.4":
   version: 1.7.5
