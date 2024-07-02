@@ -9333,6 +9333,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["bignumber.js", [\
+      ["npm:9.1.2", {\
+        "packageLocation": "./.yarn/cache/bignumber.js-npm-9.1.2-c2228c6a4a-d89b8800a9.zip/node_modules/bignumber.js/",\
+        "packageDependencies": [\
+          ["bignumber.js", "npm:9.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["bindings", [\
       ["npm:1.5.0", {\
         "packageLocation": "./.yarn/cache/bindings-npm-1.5.0-77ce1d213c-593d5ae975.zip/node_modules/bindings/",\
@@ -20436,6 +20445,7 @@ const RAW_RUNTIME_STATE =
           ["apollo-link-rest", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:0.9.0"],\
           ["bech32", "npm:2.0.0"],\
           ["big.js", "npm:6.2.1"],\
+          ["bignumber.js", "npm:9.1.2"],\
           ["color", "npm:4.2.3"],\
           ["copy-to-clipboard", "npm:3.3.3"],\
           ["csstype", "npm:3.1.2"],\

@@ -13,6 +13,8 @@ type TokenomicsState = {
 };
 
 const formatTokenomics = (data: TokenomicsQuery, state: TokenomicsState) => {
+  console.log('data:::', data);
+
   const results = { ...state };
   const stakingParams = StakingParams.fromJson(data?.stakingParams?.[0]?.params ?? {});
   results.denom = stakingParams.bondDenom;

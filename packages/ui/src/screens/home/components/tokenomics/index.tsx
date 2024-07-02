@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import numeral from 'numeral';
 import { FC } from 'react';
 import { Cell, Pie, PieChart, Tooltip } from 'recharts';
+import BigNumber from 'bignumber.js';
 
 const DynamicPieChart = dynamic(() => Promise.resolve(PieChart), { ssr: false });
 const { tokenUnits } = chainConfig();
@@ -31,6 +32,18 @@ const Tokenomics: FC<ComponentDefault> = ({ className }) => {
     </CustomToolTip>
   );
 
+  console.log(
+    'state.bonded:::',
+    state.bonded,
+    state.total,
+    numeral((state.unbonding * 100) / state.total),
+    numeral((state.unbonding * 100) / state.total).format('0.00'),
+    new BigNumber(state.bonded * 100)
+      .div(new BigNumber(state.total))
+      .multipliedBy(new BigNumber(100))
+      .toFixed(),
+    numeral(new BigNumber(state.bonded * 100).div(new BigNumber(state.total))).format('0.00')
+  );
   const data: CustomToolTipData[] = [
     {
       legendKey: 'bonded',
@@ -65,7 +78,7 @@ const Tokenomics: FC<ComponentDefault> = ({ className }) => {
       <div className={classes.data}>
         {data.slice(0, 2).map((x) => (
           <div className="data__item" key={x.percentKey}>
-            <Typography variant="h4">
+            <Typography variant="h5">
               {x.value} {tokenUnits?.[state.denom]?.display?.toUpperCase()}
             </Typography>
             <Typography variant="caption">
