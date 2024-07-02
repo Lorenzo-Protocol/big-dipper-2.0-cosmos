@@ -3,7 +3,7 @@ generates:
   ./src/graphql/types/general_types.ts:
     documents:
       - 'src/graphql/general/*'
-    schema: https://gql.desmos.forbole.com/v1/graphql
+    schema: http://45.77.251.62:8080/v1/graphql
     config:
       # omitOperationSuffix: true
       skipTypeNameForRoot: true

@@ -3,7 +3,7 @@
   "title": "Lorenzo Block Explorer",
   "extra": {
     "profile": true,
-    "graphqlWs": false
+    "graphqlWs": true
   },
   "previewImage": "https://s3.bigdipper.live/desmos.png",
   "themes": {
@@ -207,8 +207,8 @@
   },
   "chains": [
     {
-      "network": "lorenzo_8329-1",
-      "chainType": "Mainnet",
+      "network": "lorenzo_83291-1",
+      "chainType": "Testnet",
       "genesis": {
         "time": "2024-05-07T02:18:28.602151961Z",
         "height": 1
@@ -227,9 +227,9 @@
         }
       },
       "endpoints": {
-        "graphql": "http://localhost:8080/v1/graphql",
-        "graphqlWebsocket": "ws://localhost:8080/v1/graphql",
-        "publicRpcWebsocket": "ws://localhost:26657/websocket"
+        "graphql": "http://45.77.251.62:8080/v1/graphql",
+        "graphqlWebsocket": "ws://45.77.251.62:8080/v1/graphql",
+        "publicRpcWebsocket": "ws://45.77.251.62:26657/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
