@@ -27,13 +27,13 @@ services:
   # default web
   web: *web
   # for mac with M1/M2 chip
-  web-arm64v8:
-    <<: *web
-    build:
-      <<: *build
-      args:
-        <<: *args
-        BASE_IMAGE: arm64v8/node:18
+#  web-arm64v8:
+#    <<: *web
+#    build:
+#      <<: *build
+#      args:
+#        <<: *args
+#        BASE_IMAGE: arm64v8/node:18
 # Define a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
 networks:

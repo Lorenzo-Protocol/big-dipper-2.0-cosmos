@@ -110,4 +110,5 @@ COPY --chown=nextjs:nodejs --from=builder \
 # Don't run production as root
 USER nextjs
 
-CMD yarn next start -p ${PORT}
+#CMD yarn next start -p ${PORT}
+CMD yarn dev -p ${PORT}
