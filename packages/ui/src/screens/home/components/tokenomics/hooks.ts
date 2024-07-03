@@ -28,7 +28,10 @@ const formatTokenomics = (data: TokenomicsQuery, state: TokenomicsState) => {
   const bonded = data?.stakingPool?.[0]?.bonded ?? state.bonded;
   results.bonded = numeral(formatToken(bonded, results.denom).value).value() ?? 0;
 
-  const unbonded = data?.stakingPool?.[0]?.unbonded ?? state.bonded;
+  const unbonding = data?.stakingPool?.[0]?.unbonded ?? state.unbonded;
+  results.unbonding = numeral(formatToken(unbonding, results.denom).value).value() ?? 0;
+
+  const unbonded = results.total - results.unbonding - results.bonded;
   results.unbonded = numeral(formatToken(unbonded, results.denom).value).value() ?? 0;
 
   return results;

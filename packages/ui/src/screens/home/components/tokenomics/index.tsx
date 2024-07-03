@@ -78,7 +78,7 @@ const Tokenomics: FC<ComponentDefault> = ({ className }) => {
       <div className={classes.data}>
         {data.slice(0, 2).map((x) => (
           <div className="data__item" key={x.percentKey}>
-            <Typography variant="h5">
+            <Typography variant="h6">
               {x.value} {tokenUnits?.[state.denom]?.display?.toUpperCase()}
             </Typography>
             <Typography variant="caption">
