@@ -227,9 +227,9 @@
         }
       },
       "endpoints": {
-        "graphql": "http://45.77.251.62:8080/v1/graphql",
-        "graphqlWebsocket": "ws://45.77.251.62:8080/v1/graphql",
-        "publicRpcWebsocket": "ws://45.77.251.62:26657/websocket"
+        "graphql": "https://cosmscan-testnet.lorenzo-protocol.xyz/v1/graphql",
+        "graphqlWebsocket": "wss://cosmscan-testnet.lorenzo-protocol.xyz/v1/graphql",
+        "publicRpcWebsocket": "wss://rpc-cosmos-testnet.lorenzo-protocol.xyz/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
